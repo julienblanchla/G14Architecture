@@ -1,0 +1,24 @@
+@startuml
+class PrinterController {
+    + PrinterController(context:G14DB)
+    + <<async>> GetPrinters() : Task<ActionResult<IEnumerable<Printer>>>
+    + <<async>> GetPrinter(id:int) : Task<ActionResult<Printer>>
+    + <<async>> DeletePrinter(id:int) : Task<IActionResult>
+    + <<async>> AddPaper(id:int, paperDto:PaperDto) : Task<ActionResult<Paper>>
+    + <<async>> Buy(id:int, buyPaperDto:BuyPaperDto) : Task<IActionResult>
+}
+class BuyPaperDto {
+    + PrinterId : int <<get>> <<set>>
+    + PaperId : int <<get>> <<set>>
+    + UserId : int <<get>> <<set>>
+    + Amount : int <<get>> <<set>>
+    + Value : decimal <<get>> <<set>>
+}
+class PaperDto {
+    + Type : string <<get>> <<set>>
+    + Amount : int <<get>> <<set>>
+    + Value : decimal <<get>> <<set>>
+}
+ControllerBase <|-- PrinterController
+PrinterController --> "_context" G14DB
+@enduml

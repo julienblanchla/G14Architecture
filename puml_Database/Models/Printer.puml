@@ -1,0 +1,9 @@
+@startuml
+class Printer {
+    + PrinterId : int <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+}
+class "ICollection`1"<T> {
+}
+Printer --> "Papers<Paper>" "ICollection`1"
+@enduml

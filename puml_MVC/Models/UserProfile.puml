@@ -1,0 +1,18 @@
+@startuml
+class UserProfile {
+    + UserId : int <<get>> <<set>>
+    + Username : string <<get>> <<set>>
+    + Password : string <<get>> <<set>>
+    + Email : string <<get>> <<set>>
+    + FirstName : string <<get>> <<set>>
+    + LastName : string <<get>> <<set>>
+    + UserType : string <<get>> <<set>>
+}
+class Card {
+    + CardId : int <<get>> <<set>>
+    + CardNumber : string <<get>> <<set>>
+    + Balance : decimal <<get>> <<set>>
+    + OwnerId : int <<get>> <<set>>
+}
+UserProfile --> "Card" Card
+@enduml

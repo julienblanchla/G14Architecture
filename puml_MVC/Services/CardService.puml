@@ -1,0 +1,10 @@
+@startuml
+class CardService {
+    - <<readonly>> _baseUrl : string
+    + CardService(client:HttpClient, configuration:IConfiguration)
+    + <<async>> GetCard(id:int) : Task<IActionResult>
+    + <<async>> AddBalance(model:AddBalanceViewModel) : Task<IActionResult>
+}
+ICardService <|-- CardService
+CardService --> "_client" HttpClient
+@enduml

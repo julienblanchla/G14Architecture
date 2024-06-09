@@ -1,0 +1,8 @@
+@startuml
+interface Iloginservice {
+    Login(username:string, password:string) : bool
+    GetUserProfile() : Task<UserProfile>
+    GetAllUsersAsync() : Task<IEnumerable<User>>
+    GetUserProfileByIdAsync(userId:int) : Task<UserProfile>
+}
+@enduml

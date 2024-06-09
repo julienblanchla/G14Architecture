@@ -1,0 +1,10 @@
+@startuml
+interface IPrinterService {
+    GetPrintersAsync() : Task<IEnumerable<Printer>>
+    GetPrinterAsync(id:int) : Task<Printer>
+    DeletePrinterAsync(id:int) : Task<bool>
+    AddPaperAsync(printerId:int, paperDto:PaperDto) : Task<Paper>
+    BuyPaperAsync(printerId:int, buyPaperDto:BuyPaperDto) : Task<bool>
+    BuyPaper(printerId:int, paperId:int, userId:int, amount:int, value:decimal) : Task<bool>
+}
+@enduml

@@ -1,0 +1,14 @@
+@startuml
+class loginservice {
+    - <<readonly>> _baseUrl : string
+    - <<const>> UserIdSessionKey : string = "UserId"
+    + loginservice(client:HttpClient, configuration:IConfiguration, httpContextAccessor:IHttpContextAccessor)
+    + Login(username:string, password:string) : bool
+    + <<async>> GetUserProfile() : Task<UserProfile>
+    + <<async>> GetAllUsersAsync() : Task<IEnumerable<User>>
+    + <<async>> GetUserProfileByIdAsync(userId:int) : Task<UserProfile>
+}
+Iloginservice <|-- loginservice
+loginservice --> "_client" HttpClient
+loginservice --> "_httpContextAccessor" IHttpContextAccessor
+@enduml

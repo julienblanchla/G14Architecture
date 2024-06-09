@@ -1,0 +1,73 @@
+﻿@model Database.Models.Printer
+
+@{
+    ViewData["Title"] = "Use Printer";
+    var userType = ViewBag.UserType as string;
+}
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<div class="container mt-5" style="max-width: 600px;">
+    <h1 class="text-center mb-4">@Model.Name</h1>
+
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h2>Paper</h2>
+        </div>
+        <ul class="list-group list-group-flush">
+            @foreach (var paper in Model.Papers)
+            {
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div>
+                        <strong>@paper.Type</strong> - Amount: @paper.Amount, Value: @paper.Value
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-sm" onclick="expandUse(@paper.PaperId)">Use</button>
+                    </div>
+                </li>
+                <div id="useSection-@paper.PaperId" style="display:none;" class="container mt-2">
+                    <div class="form-group">
+                        <label for="numberOfPapers-@paper.PaperId">Number of Papers:</label>
+                        <input type="number" class="form-control" id="numberOfPapers-@paper.PaperId" placeholder="Enter number of papers" oninput="calculateTotal(@paper.PaperId, @paper.Value)">
+                        <span id="totalSection-@paper.PaperId" class="mt-2 d-block"></span>
+                        <button class="btn btn-primary btn-sm mt-2" onclick="buyPaper(@paper.PrinterId,@paper.PaperId, @paper.Value)">Buy</button>
+                    </div>
+                </div>
+            }
+        </ul>
+    </div>
+</div>
+
+<script>
+    function expandUse(paperId) {
+        var useSection = document.getElementById('useSection-' + paperId);
+        useSection.style.display = useSection.style.display === "none" ? "block" : "none";
+    }
+
+    async function buyPaper(printerId, paperId, value) {
+        var numberOfPapers = document.getElementById('numberOfPapers-' + paperId).value;
+        var totalValue = numberOfPapers * value;
+
+        try {
+            const response = await fetch('/Home/BuyPaper', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ PrinterId: printerId, PaperId: paperId, Amount: numberOfPapers, Value: totalValue })
+            });
+
+            const result = await response.json();
+
+            if (response.ok && result.success) {
+                alert('Purchase successful!');
+                location.reload();
+            } else {
+                alert(result.message || 'Failed to complete the purchase');
+            }
+        } catch (error) {
+            console.error('There was a problem with the fetch operation:', error);
+            alert('An error occurred. Please try again later.');
+        }
+    }
+</script>

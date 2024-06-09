@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAE+PSQSE7oE6f5N7KXU7qtwAAAAACAAAAAAAQZgAAAAEAACAAAAAORK0S571ZZAiqBQjEBytrYkqzNENfkTgCgrMGB50cLgAAAAAOgAAAAAIAACAAAAC3T7v1qmhlTEZOErGG8CzWLfswVYmTE+o78XbmVqRYQoAAAACaa2g8jrA2Zb8oz8BZ353laqchGSfgxPr3vIeugRIYSb0aQvmn/Z/gjVUZ8wnu3va7YLEBNZi6qykdxySHYjDu6x7hCr0RtbMAKJ4F5wFQHqNFC2TfOlesg01ep+xRlh6wRlCsUarze5VDil2NHVPcd801KZalatomko8DgnMxBEAAAAA+c10IfeMZEI3AvWVjjnm55s0fttYLryaNdedgdXYELNxGbor4XHMQxmwRwmyfBiIE6sXfKPke6HDv6SNIUCR5</EncryptedPassword>
+    <History>True|2024-06-09T18:50:27.5921524Z;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Data Source=webapi14dbserver.database.windows.net,1433%3bInitial Catalog=WebAPI_db%3bUser ID=jumi%3bPassword=MiJuCHF%24</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

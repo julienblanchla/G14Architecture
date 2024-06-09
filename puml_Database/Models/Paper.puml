@@ -1,0 +1,10 @@
+@startuml
+class Paper {
+    + PaperId : int <<get>> <<set>>
+    + Type : string <<get>> <<set>>
+    + Amount : int <<get>> <<set>>
+    + Value : decimal <<get>> <<set>>
+    + PrinterId : int <<get>> <<set>>
+}
+Paper --> "Printer" Printer
+@enduml

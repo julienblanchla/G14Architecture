@@ -1,0 +1,68 @@
+﻿@model MVC.Models.UserProfile
+
+@{
+    ViewData["Title"] = "User Profile";
+}
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">User Profile</h1>
+
+    @if (Model != null)
+    {
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+                <h2 class="mb-0">@Model.FirstName @Model.LastName</h2>
+            </div>
+            <div class="card-body">
+                <dl class="row">
+                    <dt class="col-sm-4">Username</dt>
+                    <dd class="col-sm-8">@Model.Username</dd>
+
+                    <dt class="col-sm-4">Email</dt>
+                    <dd class="col-sm-8">@Model.Email</dd>
+
+                    <dt class="col-sm-4">User Type</dt>
+                    <dd class="col-sm-8">@Model.UserType</dd>
+
+                    @if (Model.Card != null)
+                    {
+                        <dt class="col-sm-4">Card Number</dt>
+                        <dd class="col-sm-8">@Model.Card.CardNumber</dd>
+
+                        <dt class="col-sm-4">Balance</dt>
+                        <dd class="col-sm-8">
+                            CHF @Model.Card.Balance
+                            <a href="@Url.Action("AddBalance", "Home", new { cardId = Model.Card.CardId })" class="btn btn-success ml-2">+</a>
+                        </dd>
+                    }
+                    else
+                    {
+                        <dt class="col-sm-4">Card</dt>
+                        <dd class="col-sm-8">No card information available</dd>
+                    }
+                </dl>
+            </div>
+        </div>
+
+        @if (Model.UserType == "Admin")
+        {
+            <div class="text-center mt-4">
+                <a href="@Url.Action("AllUsers", "Home")" class="btn btn-primary">View All Users</a>
+            </div>
+        }
+    }
+    else
+    {
+        <div class="alert alert-warning text-center">
+            <h2>No profile information available</h2>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+}

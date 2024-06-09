@@ -1,0 +1,8 @@
+@startuml
+class LoginModel {
+    + Username : string <<get>> <<internal set>>
+    + Password : string <<get>> <<internal set>>
+    + OnGet() : void
+}
+PageModel <|-- LoginModel
+@enduml

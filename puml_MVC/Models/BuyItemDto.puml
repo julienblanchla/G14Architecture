@@ -1,0 +1,6 @@
+@startuml
+class BuyItemDto {
+    + SaleId : int <<get>> <<set>>
+    + SaleValue : decimal <<get>> <<set>>
+}
+@enduml

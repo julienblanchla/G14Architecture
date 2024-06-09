@@ -1,0 +1,7 @@
+@startuml
+class AddBalanceViewModel {
+    + CardId : int <<get>> <<set>>
+    + CardNumber : string <<get>> <<set>>
+    + Amount : decimal <<get>> <<set>>
+}
+@enduml

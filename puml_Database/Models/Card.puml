@@ -1,0 +1,11 @@
+@startuml
+class Card {
+    + CardId : int <<get>> <<set>>
+    + CardNumber : string <<get>> <<set>>
+    + Balance : decimal <<get>> <<set>>
+    + OwnerId : int <<get>> <<set>>
+    + checkBalance() : bool
+    + checkQuota() : bool
+}
+Card --> "Owner" User
+@enduml

@@ -1,0 +1,6 @@
+@startuml
+interface ICardService {
+    GetCard(id:int) : Task<IActionResult>
+    AddBalance(model:AddBalanceViewModel) : Task<IActionResult>
+}
+@enduml

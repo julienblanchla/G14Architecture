@@ -1,0 +1,18 @@
+@startuml
+class PrinterService {
+    - <<readonly>> _baseUrl : string
+    + PrinterService(client:HttpClient, configuration:IConfiguration, httpContextAccessor:IHttpContextAccessor, logger:ILogger<PrinterService>)
+    + <<async>> GetPrintersAsync() : Task<IEnumerable<Printer>>
+    + <<async>> GetPrinterAsync(id:int) : Task<Printer>
+    + <<async>> DeletePrinterAsync(id:int) : Task<bool>
+    + <<async>> AddPaperAsync(printerId:int, paperDto:PaperDto) : Task<Paper>
+    + <<async>> BuyPaperAsync(printerId:int, buyPaperDto:BuyPaperDto) : Task<bool>
+    + <<async>> BuyPaper(printerId:int, paperId:int, userId:int, amount:int, value:decimal) : Task<bool>
+}
+class "ILogger`1"<T> {
+}
+IPrinterService <|-- PrinterService
+PrinterService --> "_client" HttpClient
+PrinterService --> "_httpContextAccessor" IHttpContextAccessor
+PrinterService --> "_logger<PrinterService>" "ILogger`1"
+@enduml

@@ -1,0 +1,15 @@
+@startuml
+class CardController {
+    + CardController(context:G14DB)
+    + <<async>> GetCards() : Task<ActionResult<IEnumerable<Card>>>
+    + <<async>> GetCard(id:int) : Task<ActionResult<Card>>
+    + <<async>> AddBalance(model:AddBalanceViewModel) : Task<IActionResult>
+    - CardExists(id:int) : bool
+}
+class AddBalanceViewModel {
+    + CardId : int <<get>> <<set>>
+    + Amount : decimal <<get>> <<set>>
+}
+ControllerBase <|-- CardController
+CardController --> "_context" G14DB
+@enduml

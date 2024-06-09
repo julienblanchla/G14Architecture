@@ -1,0 +1,7 @@
+@startuml
+class PaperDto {
+    + Type : string <<get>> <<set>>
+    + Amount : int <<get>> <<set>>
+    + Value : decimal <<get>> <<set>>
+}
+@enduml

@@ -1,0 +1,8 @@
+@startuml
+class BuyPaperDto {
+    + PrinterId : int <<get>> <<set>>
+    + PaperId : int <<get>> <<set>>
+    + Amount : int <<get>> <<set>>
+    + Value : decimal <<get>> <<set>>
+}
+@enduml

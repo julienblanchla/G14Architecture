@@ -1,0 +1,13 @@
+C:\Users\Julien\Desktop\G14_Architecture\G14_Architecture\Database\bin\Release\net8.0\Database.deps.json
+C:\Users\Julien\Desktop\G14_Architecture\G14_Architecture\Database\bin\Release\net8.0\Database.dll
+C:\Users\Julien\Desktop\G14_Architecture\G14_Architecture\Database\bin\Release\net8.0\Database.pdb
+C:\Users\Julien\Desktop\G14_Architecture\G14_Architecture\Database\obj\Release\net8.0\Database.csproj.AssemblyReference.cache
+C:\Users\Julien\Desktop\G14_Architecture\G14_Architecture\Database\obj\Release\net8.0\Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Julien\Desktop\G14_Architecture\G14_Architecture\Database\obj\Release\net8.0\Database.AssemblyInfoInputs.cache
+C:\Users\Julien\Desktop\G14_Architecture\G14_Architecture\Database\obj\Release\net8.0\Database.AssemblyInfo.cs
+C:\Users\Julien\Desktop\G14_Architecture\G14_Architecture\Database\obj\Release\net8.0\Database.csproj.CoreCompileInputs.cache
+C:\Users\Julien\Desktop\G14_Architecture\G14_Architecture\Database\obj\Release\net8.0\Database.sourcelink.json
+C:\Users\Julien\Desktop\G14_Architecture\G14_Architecture\Database\obj\Release\net8.0\Database.dll
+C:\Users\Julien\Desktop\G14_Architecture\G14_Architecture\Database\obj\Release\net8.0\refint\Database.dll
+C:\Users\Julien\Desktop\G14_Architecture\G14_Architecture\Database\obj\Release\net8.0\Database.pdb
+C:\Users\Julien\Desktop\G14_Architecture\G14_Architecture\Database\obj\Release\net8.0\ref\Database.dll

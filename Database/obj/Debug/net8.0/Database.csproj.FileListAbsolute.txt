@@ -1,0 +1,39 @@
+C:\Users\aless\OneDrive\Bureau\Ecole\Semestre 2\Architecture\VisualStudio\GroupeG19---Architecture\Database\bin\Debug\net8.0\Database.deps.json
+C:\Users\aless\OneDrive\Bureau\Ecole\Semestre 2\Architecture\VisualStudio\GroupeG19---Architecture\Database\bin\Debug\net8.0\Database.dll
+C:\Users\aless\OneDrive\Bureau\Ecole\Semestre 2\Architecture\VisualStudio\GroupeG19---Architecture\Database\bin\Debug\net8.0\Database.pdb
+C:\Users\aless\OneDrive\Bureau\Ecole\Semestre 2\Architecture\VisualStudio\GroupeG19---Architecture\Database\obj\Debug\net8.0\Database.csproj.AssemblyReference.cache
+C:\Users\aless\OneDrive\Bureau\Ecole\Semestre 2\Architecture\VisualStudio\GroupeG19---Architecture\Database\obj\Debug\net8.0\Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aless\OneDrive\Bureau\Ecole\Semestre 2\Architecture\VisualStudio\GroupeG19---Architecture\Database\obj\Debug\net8.0\Database.AssemblyInfoInputs.cache
+C:\Users\aless\OneDrive\Bureau\Ecole\Semestre 2\Architecture\VisualStudio\GroupeG19---Architecture\Database\obj\Debug\net8.0\Database.AssemblyInfo.cs
+C:\Users\aless\OneDrive\Bureau\Ecole\Semestre 2\Architecture\VisualStudio\GroupeG19---Architecture\Database\obj\Debug\net8.0\Database.csproj.CoreCompileInputs.cache
+C:\Users\aless\OneDrive\Bureau\Ecole\Semestre 2\Architecture\VisualStudio\GroupeG19---Architecture\Database\obj\Debug\net8.0\Database.sourcelink.json
+C:\Users\aless\OneDrive\Bureau\Ecole\Semestre 2\Architecture\VisualStudio\GroupeG19---Architecture\Database\obj\Debug\net8.0\Database.dll
+C:\Users\aless\OneDrive\Bureau\Ecole\Semestre 2\Architecture\VisualStudio\GroupeG19---Architecture\Database\obj\Debug\net8.0\refint\Database.dll
+C:\Users\aless\OneDrive\Bureau\Ecole\Semestre 2\Architecture\VisualStudio\GroupeG19---Architecture\Database\obj\Debug\net8.0\Database.pdb
+C:\Users\aless\OneDrive\Bureau\Ecole\Semestre 2\Architecture\VisualStudio\GroupeG19---Architecture\Database\obj\Debug\net8.0\ref\Database.dll
+C:\Users\Julien\Downloads\GroupeG19---Architecture 6\GroupeG19---Architecture\Database\bin\Debug\net8.0\Database.deps.json
+C:\Users\Julien\Downloads\GroupeG19---Architecture 6\GroupeG19---Architecture\Database\bin\Debug\net8.0\Database.dll
+C:\Users\Julien\Downloads\GroupeG19---Architecture 6\GroupeG19---Architecture\Database\bin\Debug\net8.0\Database.pdb
+C:\Users\Julien\Downloads\GroupeG19---Architecture 6\GroupeG19---Architecture\Database\obj\Debug\net8.0\Database.csproj.AssemblyReference.cache
+C:\Users\Julien\Downloads\GroupeG19---Architecture 6\GroupeG19---Architecture\Database\obj\Debug\net8.0\Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Julien\Downloads\GroupeG19---Architecture 6\GroupeG19---Architecture\Database\obj\Debug\net8.0\Database.AssemblyInfoInputs.cache
+C:\Users\Julien\Downloads\GroupeG19---Architecture 6\GroupeG19---Architecture\Database\obj\Debug\net8.0\Database.AssemblyInfo.cs
+C:\Users\Julien\Downloads\GroupeG19---Architecture 6\GroupeG19---Architecture\Database\obj\Debug\net8.0\Database.csproj.CoreCompileInputs.cache
+C:\Users\Julien\Downloads\GroupeG19---Architecture 6\GroupeG19---Architecture\Database\obj\Debug\net8.0\Database.sourcelink.json
+C:\Users\Julien\Downloads\GroupeG19---Architecture 6\GroupeG19---Architecture\Database\obj\Debug\net8.0\Database.dll
+C:\Users\Julien\Downloads\GroupeG19---Architecture 6\GroupeG19---Architecture\Database\obj\Debug\net8.0\refint\Database.dll
+C:\Users\Julien\Downloads\GroupeG19---Architecture 6\GroupeG19---Architecture\Database\obj\Debug\net8.0\Database.pdb
+C:\Users\Julien\Downloads\GroupeG19---Architecture 6\GroupeG19---Architecture\Database\obj\Debug\net8.0\ref\Database.dll
+C:\Users\Julien\Desktop\G14_Architecture\G14_Architecture\Database\bin\Debug\net8.0\Database.deps.json
+C:\Users\Julien\Desktop\G14_Architecture\G14_Architecture\Database\bin\Debug\net8.0\Database.dll
+C:\Users\Julien\Desktop\G14_Architecture\G14_Architecture\Database\bin\Debug\net8.0\Database.pdb
+C:\Users\Julien\Desktop\G14_Architecture\G14_Architecture\Database\obj\Debug\net8.0\Database.csproj.AssemblyReference.cache
+C:\Users\Julien\Desktop\G14_Architecture\G14_Architecture\Database\obj\Debug\net8.0\Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Julien\Desktop\G14_Architecture\G14_Architecture\Database\obj\Debug\net8.0\Database.AssemblyInfoInputs.cache
+C:\Users\Julien\Desktop\G14_Architecture\G14_Architecture\Database\obj\Debug\net8.0\Database.AssemblyInfo.cs
+C:\Users\Julien\Desktop\G14_Architecture\G14_Architecture\Database\obj\Debug\net8.0\Database.csproj.CoreCompileInputs.cache
+C:\Users\Julien\Desktop\G14_Architecture\G14_Architecture\Database\obj\Debug\net8.0\Database.sourcelink.json
+C:\Users\Julien\Desktop\G14_Architecture\G14_Architecture\Database\obj\Debug\net8.0\Database.dll
+C:\Users\Julien\Desktop\G14_Architecture\G14_Architecture\Database\obj\Debug\net8.0\refint\Database.dll
+C:\Users\Julien\Desktop\G14_Architecture\G14_Architecture\Database\obj\Debug\net8.0\Database.pdb
+C:\Users\Julien\Desktop\G14_Architecture\G14_Architecture\Database\obj\Debug\net8.0\ref\Database.dll

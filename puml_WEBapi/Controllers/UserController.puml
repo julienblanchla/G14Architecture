@@ -1,0 +1,18 @@
+@startuml
+class UserController {
+    + UserController(context:G14DB)
+    + <<async>> GetUsers() : Task<ActionResult<IEnumerable<User>>>
+    + <<async>> GetUser(id:int) : Task<ActionResult<User>>
+    + <<async>> CreateUser(user:User) : Task<ActionResult<User>>
+    + <<async>> UpdateUser(id:int, user:User) : Task<IActionResult>
+    + <<async>> DeleteUser(id:int) : Task<IActionResult>
+    + <<async>> Login(loginModel:LoginModel) : Task<ActionResult<User>>
+    - UserExists(id:int) : bool
+}
+class LoginModel {
+    + Username : string <<get>> <<set>>
+    + Password : string <<get>> <<set>>
+}
+ControllerBase <|-- UserController
+UserController --> "_context" G14DB
+@enduml

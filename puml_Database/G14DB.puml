@@ -1,0 +1,13 @@
+@startuml
+class G14DB {
+    + G14DB(options:DbContextOptions<G14DB>)
+    # <<override>> OnModelCreating(modelBuilder:ModelBuilder) : void
+}
+class "DbSet`1"<T> {
+}
+DbContext <|-- G14DB
+G14DB --> "Cards<Card>" "DbSet`1"
+G14DB --> "Papers<Paper>" "DbSet`1"
+G14DB --> "Printers<Printer>" "DbSet`1"
+G14DB --> "User<User>" "DbSet`1"
+@enduml

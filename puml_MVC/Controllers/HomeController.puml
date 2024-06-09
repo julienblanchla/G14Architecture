@@ -1,0 +1,28 @@
+@startuml
+class HomeController {
+    + HomeController(logger:ILogger<HomeController>, loginService:Iloginservice, cardService:ICardService, printerService:IPrinterService)
+    + Login() : IActionResult
+    + Index() : IActionResult
+    + Login(username:string, password:string) : IActionResult
+    + <<async>> Profile() : Task<IActionResult>
+    + <<async>> AddBalance(cardId:int) : Task<IActionResult>
+    + <<async>> AddBalance(model:AddBalanceViewModel) : Task<IActionResult>
+    + <<async>> AllUsers() : Task<IActionResult>
+    + <<async>> CheckProfile(userId:int) : Task<IActionResult>
+    + <<async>> Printers() : Task<IActionResult>
+    + <<async>> PrinterDetails(id:int) : Task<IActionResult>
+    + <<async>> DeletePrinter(id:int) : Task<IActionResult>
+    + AddPaper(printerId:int) : IActionResult
+    + <<async>> AddPaper(printerId:int, paperDto:PaperDto) : Task<IActionResult>
+    + <<async>> UsePrinter(printerId:int) : Task<IActionResult>
+    + <<async>> BuyPaper(buyPaperDto:BuyPaperDto) : Task<IActionResult>
+    + Error() : IActionResult
+}
+class "ILogger`1"<T> {
+}
+Controller <|-- HomeController
+HomeController --> "_logger<HomeController>" "ILogger`1"
+HomeController --> "_loginService" Iloginservice
+HomeController --> "_cardService" ICardService
+HomeController --> "_printerService" IPrinterService
+@enduml

@@ -1,0 +1,25 @@
+@startuml
+!include .\\Program.puml
+!include .\\Controllers\HomeController.puml
+!include .\\Models\AddBalanceViewModel.puml
+!include .\\Models\BuyItemDto.puml
+!include .\\Models\BuyPaperDto.puml
+!include .\\Models\ErrorViewModel.puml
+!include .\\Models\PaperDto.puml
+!include .\\Models\Printers.puml
+!include .\\Models\Sale.puml
+!include .\\Models\SaleDto.puml
+!include .\\Models\UserProfile.puml
+!include .\\Models\UserResponse.puml
+!include .\\Services\CardService.puml
+!include .\\Services\loginservice.puml
+!include .\\Services\PrinterService.puml
+!include .\\Services\Interfaces\ICardService.puml
+!include .\\Services\Interfaces\Iloginservice.puml
+!include .\\Services\Interfaces\IPrintService.puml
+!include .\\Views\Home\Login.cshtml.puml
+!include .\\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.puml
+!include .\\obj\Debug\net8.0\MVC.AssemblyInfo.puml
+!include .\\obj\Debug\net8.0\MVC.GlobalUsings.g.puml
+!include .\\obj\Debug\net8.0\MVC.RazorAssemblyInfo.puml
+@enduml
